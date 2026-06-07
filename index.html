@@ -3,65 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>João Victor</title>
+    <title>João Victor — Desenvolvedor de Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-   <nav>
-        <ul>
-            <li>
-                <a href=index.html >Sobre mim</a>
-            </li>
-            <li>
-                <a href=project.html>Projetos</a>
-            </li>
-            <li>
-                <a href="contact.html">Contato</a>
-            </li>
-        </ul>
-    </nav>
-    <header>
-        <div class="center">
-            <img src="./img/joao_victor.jpeg"></img>
+
+    <div class="grain"></div>
+
+    <nav>
+        <div class="nav-inner">
+            <span class="nav-logo">JV<span class="dot">.</span></span>
+            <ul>
+                <li><a href="index.html" class="active">Sobre</a></li>
+                <li><a href="project.html">Projetos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
         </div>
-        <h1>João Victor Sampaio</h1>
-        <h2>Desenvolvedor de Software</h2>
-    </header>
+    </nav>
+
     <main>
-        <section>
-            <h3>Sobre mim</h3>
-            <p>
-            Um estudante da terceira série do ensino médio que é simplesmente
-            apaixonado em programação, tendo uma relação de amor e odio com a
-            mesma. Me dedico todos os dias (apesar do tempo, obrigações e trabalho) a
-            estudar programação. Planejo cursar Ciência da Computação no IF e me tornar
-            um exelente profissional na área.
+        <section class="hero">
+            <div class="hero-photo-wrap">
+                <img src="./img/joao_victor.jpeg" alt="João Victor Sampaio" class="hero-photo">
+                <div class="hero-photo-ring"></div>
+            </div>
+            <div class="hero-text">
+                <p class="hero-label">// desenvolvedor de software</p>
+                <h1>João Victor<br><span class="hero-lastname">Sampaio</span></h1>
+                <p class="hero-bio">
+                    Estudante do ensino médio apaixonado por programação — uma relação de amor e ódio que me faz estudar todo dia. Focado em evoluir e cursar Ciência da Computação no IF.
+                </p>
+                <div class="hero-links">
+                    <a href="https://github.com/joao-phy" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.youtube.com/@FlashBackxz" target="_blank" rel="noopener noreferrer" class="btn-outline">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        YouTube
+                    </a>
+                </div>
+            </div>
         </section>
-         <section>
-            <h3>Formação</h3>
-            <p>
-            Cursando a Terceira Série do Ensino Médio no Colégio Estadual Martins Borges 
-            </p>
-        </section>
-         <section>
-            <h3>Cursos</h3>
-            <p>
-            Lógica de Programação e Algoritmos (40 horas) - Professor Gustavo Guanabara
-            </p>
+
+        <section class="info-grid">
+            <div class="card">
+                <span class="card-number">01</span>
+                <h2>Sobre mim</h2>
+                <p>
+                    Um estudante da terceira série do ensino médio simplesmente apaixonado em programação, tendo uma relação de amor e ódio com a mesma. Me dedico todos os dias — apesar do tempo, obrigações e trabalho — a estudar. Planejo cursar Ciência da Computação no IF e me tornar um excelente profissional na área.
+                </p>
+            </div>
+            <div class="card">
+                <span class="card-number">02</span>
+                <h2>Formação</h2>
+                <p>
+                    Cursando a Terceira Série do Ensino Médio no <strong>Colégio Estadual Martins Borges</strong>.
+                </p>
+                <div class="tag-row">
+                    <span class="tag">Ensino Médio</span>
+                    <span class="tag">3ª Série</span>
+                </div>
+            </div>
+            <div class="card">
+                <span class="card-number">03</span>
+                <h2>Cursos</h2>
+                <p>
+                    <strong>Lógica de Programação e Algoritmos</strong> (40h)<br>
+                    Professor Gustavo Guanabara
+                </p>
+                <div class="tag-row">
+                    <span class="tag">Algoritmos</span>
+                    <span class="tag">Lógica</span>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <a href="https://www.youtube.com/@FlashBackxz" target="_blank" rel="noopener noreferrer">
-          <img src="./img/youtube_logo.svg"></img>
-          <p>Youtube</p>
-        </a>
-        <a href="https://github.com/joao-phy" target="_blank" rel="noopener noreferrer">
-          <img class="git" src="./img/github_logo.png"></img>
-          <p>GitHub</p>
-        </a>
+        <p class="footer-text">Feito com <span class="heart">♥</span> e muito café — João Victor © 2026</p>
     </footer>
-    </div>
+
 </body>
 </html>
